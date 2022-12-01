@@ -5,7 +5,7 @@ foreach  ($user in $usuarios)
 	Remove-LocalUser $user.cuenta
 }
 
-$file_groups=Import-Csv -Path Grupos.csv 
+$file_groups=Import-Csv -Path grupos.csv 
 foreach ($group in $file_groups) { 
   Remove-LocalGroup $group.nombre
 }
